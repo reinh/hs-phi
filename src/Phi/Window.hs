@@ -22,12 +22,10 @@ push d window = window {sample = sample'}
           V.take (size window)
                  (V.cons d (sample window))
 
-pLater :: Window -> Double -> Double
-pLater =
-  complCumulative . normalFromSample . sample
-
 phi :: Window -> Double -> Double
 phi w = negate . logBase 10 . pLater w
+  where pLater :: Window -> Double -> Double
+        pLater = complCumulative . normalFromSample . sample
 
 length :: Window -> Int
 length = V.length . sample
