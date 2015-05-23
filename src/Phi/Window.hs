@@ -1,5 +1,9 @@
-{-# LANGUAGE RecordWildCards #-}
-module Phi.Window (Window, length, mkWindow, push, phi) where
+module Phi.Window
+  ( Window, mkWindow
+  , length
+  , push
+  , phi
+  ) where
 
 import           Data.Vector.Unboxed            (Vector)
 import qualified Data.Vector.Unboxed            as V
