@@ -30,7 +30,6 @@ phi Detector{..} now
   | W.length window < minSamples = Nothing
   | otherwise = Just (W.phi window now)
 
-
 -- | Calculate ϕ for the detector. Yay unicode!
 ϕ :: Detector -> Double -> Maybe Double
 ϕ = phi
