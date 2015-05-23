@@ -18,8 +18,7 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Phi
-                     , Phi.Window
-  -- other-modules:
+  other-modules:       Phi.Window
   -- other-extensions:
   build-depends:       base >=4.7 && <4.8
                      , statistics >= 0.13.2.3
